@@ -1,0 +1,94 @@
+._container {
+  max-width: 100rem;
+  margin: 0 auto;
+  @media (max-width: 1200px) {
+    max-width: 960px;
+  }
+  @media (max-width: 960px) {
+    max-width: 640px;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  @media (max-width: 480px) {
+    max-width: 320px;
+    padding: 0;
+  }
+}
+._subtitle {
+  display: inline-block;
+  width: max-content;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #929292;
+  border: 0.1rem solid #929292;
+  border-radius: 23rem;
+  padding: 0.4rem 2rem;
+  align-self: center;
+  @media (max-width: 1200px) {
+    padding: 4px 20px;
+    border-radius: 230px;
+    font-size: 20px;
+    border: 1px solid #929292;
+  }
+  @media (max-width: 960px) {
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+._title {
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  align-self: center;
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+  @media (max-width: 960px) {
+    font-size: 38px;
+  }
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+._anchor {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  svg {
+    width: 3.4rem;
+    height: 1.8rem;
+  }
+  @media (max-width: 1200px) {
+    width: 70px;
+    height: 70px;
+    svg {
+      width: 34px;
+      height: 18px;
+    }
+  }
+  @media (max-width: 960px) {
+    width: 50px;
+    height: 50px;
+    svg {
+      width: 24px;
+      height: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+}
