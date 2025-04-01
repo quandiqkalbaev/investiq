@@ -3710,18 +3710,14 @@ html.with-panzoom-in-fullscreen {
   background: linear-gradient(143deg, rgba(215, 41, 104, 0.5) 0%, rgba(1, 87, 120, 0.5) 100%);
 }
 
-.team__img::after{
-  background: url("../img/team/border.png"); }
-
-.team__img::after {
+.team__img-border {
   width: 100%;
   height: 100%;
   position: absolute;
-  content: "";
   left: 0;
   top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team__img img {
@@ -4203,18 +4199,15 @@ html.with-panzoom-in-fullscreen {
   opacity: 1;
   visibility: visible;
 }
-.user__img::after{
-  background: url("../img/team/border.png"); }
 
-.user__img::after {
+.user__img-border {
   width: 100%;
   height: 100%;
   position: absolute;
-  content: "";
   left: 0;
   top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .user__img img {
@@ -6194,7 +6187,3 @@ html.with-panzoom-in-fullscreen {
             transform: scale(1.1);
   }
 }
-
-.team__img::after{ background: url(../img/team/border.webp); }
-
-.user__img::after{ background: url(../img/team/border.webp); }
