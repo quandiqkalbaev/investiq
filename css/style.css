@@ -3079,12 +3079,14 @@ html.with-panzoom-in-fullscreen {
   position: absolute;
   left: 0;
   top: 100%;
-  width: 0;
+  width: 100%;
   height: 1px;
   background-color: #000;
   -webkit-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
 }
 
 .header__btn {
@@ -6064,7 +6066,8 @@ html.with-panzoom-in-fullscreen {
   }
 
   .header__item:hover::after {
-    width: 100%;
+    -webkit-clip-path: inset(0 0% 0 0);
+            clip-path: inset(0 0% 0 0);
   }
 
   .footer__item:hover::after {
