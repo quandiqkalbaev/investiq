@@ -3710,7 +3710,7 @@ html.with-panzoom-in-fullscreen {
   background: linear-gradient(143deg, rgba(215, 41, 104, 0.5) 0%, rgba(1, 87, 120, 0.5) 100%);
 }
 
-.no-webp .team__img::after{
+.team__img::after{
   background: url("../img/team/border.png"); }
 
 .team__img::after {
@@ -4203,8 +4203,7 @@ html.with-panzoom-in-fullscreen {
   opacity: 1;
   visibility: visible;
 }
-
-.no-webp .user__img::after{
+.user__img::after{
   background: url("../img/team/border.png"); }
 
 .user__img::after {
@@ -6196,6 +6195,6 @@ html.with-panzoom-in-fullscreen {
   }
 }
 
-.webp .team__img::after{ background: url(../img/team/border.webp); }
+.team__img::after{ background: url(../img/team/border.webp); }
 
-.webp .user__img::after{ background: url(../img/team/border.webp); }
+.user__img::after{ background: url(../img/team/border.webp); }
