@@ -18485,6 +18485,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const introBlock = document.querySelector(".intro");
     const headerBlock = document.querySelector(".header");
     const aboutBlock = document.querySelector(".about");
+    const userBlock = document.querySelector(".user");
     function setProgress(percent) {
       preloaderNum.innerHTML = `${percent}%`;
     }
@@ -18501,9 +18502,9 @@ window.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           introBlock?.classList.add("active");
           headerBlock.classList.add("active");
+          userBlock?.classList.add("active");
           if (queryMatches(768)) {
             aboutBlock?.classList.add("active");
-
           }
         }, 600);
         setTimeout(() => {
