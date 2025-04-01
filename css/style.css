@@ -3711,7 +3711,7 @@ html.with-panzoom-in-fullscreen {
 }
 
 .no-webp .team__img::after{
-  background: url("../../img/team/border.png"); }
+  background: url("./img/team/border.png"); }
 
 .team__img::after {
   width: 100%;
@@ -4205,7 +4205,7 @@ html.with-panzoom-in-fullscreen {
 }
 
 .no-webp .user__img::after{
-  background: url("../../img/team/border.png"); }
+  background: url("./img/team/border.png"); }
 
 .user__img::after {
   width: 100%;
@@ -6196,6 +6196,6 @@ html.with-panzoom-in-fullscreen {
   }
 }
 
-.webp .team__img::after{ background: url(../../img/team/border.webp); }
+.webp .team__img::after{ background: url(./img/team/border.webp); }
 
-.webp .user__img::after{ background: url(../../img/team/border.webp); }
+.webp .user__img::after{ background: url(./img/team/border.webp); }
