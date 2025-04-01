@@ -168,16 +168,13 @@
       width: 118px;
       height: 118px;
     }
-    &::after {
+    &-border {
       width: 100%;
       height: 100%;
       position: absolute;
-      content: "";
       left: 0;
       top: 0;
-      background: url("../img/team/border.png");
-      background-repeat: no-repeat;
-      background-size: cover;
+      object-fit: cover;
     }
     img {
       width: 100%;
