@@ -14,33 +14,58 @@ export function header() {
 
   let links = document.querySelectorAll(".link__item");
   let logos = document.querySelectorAll("._logo");
+  
   links.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       let target = link.getAttribute("data-href");
+  
+      if (window.location.pathname.includes("profile")) {
+        sessionStorage.setItem("scrollTarget", target);
+        window.location.href = "/";
+      } else {
+        gsap.to(window, {
+          duration: 0.2,
+          scrollTo: {
+            y: target,
+            offsetY: 150,
+          },
+          ease: "power2",
+        });
+      }
+    });
+  });
+
+  logos.forEach((logo) => {
+    logo.addEventListener("click", () => {
+      if (window.location.pathname.includes("profile")) {
+        window.location.href = "/";
+      } else {
+        gsap.to(window, {
+          duration: 0.2,
+          scrollTo: {
+            y: 0,
+          },
+          ease: "power2",
+        });
+      }
+    });
+  });
+  
+  window.addEventListener("load", () => {
+    let target = sessionStorage.getItem("scrollTarget");
+  
+    if (target) {
       gsap.to(window, {
         duration: 0.2,
         scrollTo: {
           y: target,
-          offsetY:150
+          offsetY: 150,
         },
         ease: "power2",
       });
-      if(headerBlock.classList.contains('menu-open')){
-        headerBlock.classList.remove("menu-open");
-
-      }
-    });
+      sessionStorage.removeItem("scrollTarget");
+    }
   });
-  logos.forEach((logo) => {
-    logo.addEventListener("click", () => {
-      gsap.to(window, {
-        duration: 0.2,
-        scrollTo: {
-          y: 0,
-        },
-        ease: "power2",
-      });
-    });
-  });
+  
 }
